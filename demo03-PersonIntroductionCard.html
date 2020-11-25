@@ -1,0 +1,115 @@
+<!-- 人員介紹卡片-Person introduction card -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100,500,900&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+    html, body{
+      height: 100%;
+    }
+    body{
+      display: flex;
+      align-items: center;
+      background-color: #3f3736	;
+    }
+    .wrap{
+      width: 1200px;
+      display: flex;
+      margin: auto;
+    }
+    .item{
+      width: 368px;
+      margin: 15px;
+      text-align: center;
+      background-color: #fff;
+      border: 1px solid #aaa;
+      transform: translateY(0px);
+      transition: 0.5s;
+    }
+    .item:hover{
+      transform: translateY(-50px);
+    }
+    .item img{
+      width: 100%;
+      vertical-align: middle;
+    }
+    .item h2{
+      border-bottom: 1px solid #aaa;
+      padding-bottom: 0.3em;
+      margin-bottom: 0.4em;
+      font-weight: 900;
+    }
+    .item p{
+      line-height: 1.5;
+      font-weight: 300;
+    }
+    .item .txt{
+      padding: 20px;
+      position: relative;
+    }
+    .item .txt:before{
+      content: '';
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-top: 50px solid transparent;
+      border-left: 184px solid #fff;
+      border-right: 184px solid #fff;
+      transform: translateY(-100%);
+    }
+    .item:hover .txt{
+      background-image: linear-gradient(0deg, #665152, #939391);
+    }
+    .item:hover .txt:before{
+      border-left: 184px solid #939391;
+      border-right: 184px solid #939391;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="wrap">
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1431274172761-fca41d930114?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60">
+      <div class="txt">
+        <h2>Paris</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat porro maiores numquam ipsum esse corrupti rem, culpa aliquid tenetur iusto quo amet. Expedita, eum? Quia amet ut nemo soluta illum.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1580167227251-be70f01b0c51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60">
+      <div class="txt">
+        <h2>Tokyo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat porro maiores numquam ipsum esse corrupti rem,
+          culpa aliquid tenetur iusto quo amet. Expedita, eum? Quia amet ut nemo soluta illum.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1518730518541-d0843268c287?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60">
+      <div class="txt">
+        <h2>Venice</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat porro maiores numquam ipsum esse corrupti rem,
+          culpa aliquid tenetur iusto quo amet. Expedita, eum? Quia amet ut nemo soluta illum.</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
